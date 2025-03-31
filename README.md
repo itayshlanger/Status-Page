@@ -9,6 +9,17 @@ This project is a **full DevOps lifecycle migration** of a **status page applica
 - **Monitoring** with Prometheus & Grafana.
 - **Agile methodology** for continuous development and deployment.
 
+## **Technologies Used**
+| **Component** | **Technology Used** |
+|--------------|------------------|
+| **Containerization** | Docker |
+| **Image Repository** | DockerHub |
+| **Orchestration** | Kubernetes (EKS) |
+| **Database** | AWS RDS |
+| **Infrastructure as Code** | Terraform |
+| **CI/CD Tool** | Jenkins (running on EC2 within the same VPC) |
+| **Monitoring** | Prometheus & Grafana (deployed via Helm) |
+
 ## Project Workflow
 The project follows a structured branching model where each directory represents a "branch" in the original project. Engineers work collaboratively within this model:
 
@@ -23,17 +34,6 @@ The project follows a structured branching model where each directory represents
 3. Approved pull requests are merged into **Dev branch**.
 4. **Scheduled testing** ensures Dev branch is stable before pushing to **Prod branch**.
 5. CD pipelines automatically update **Prod branch** while ensuring minimal downtime.
-
-## **Technologies Used**
-| **Component** | **Technology Used** |
-|--------------|------------------|
-| **Containerization** | Docker |
-| **Image Repository** | DockerHub |
-| **Orchestration** | Kubernetes (EKS) |
-| **Database** | AWS RDS |
-| **Infrastructure as Code** | Terraform |
-| **CI/CD Tool** | Jenkins (running on EC2 within the same VPC) |
-| **Monitoring** | Prometheus & Grafana (deployed via Helm) |
 
 ## **Deployment & Monitoring**
 ### **Continuous Integration & Deployment**
